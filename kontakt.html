@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knjižara Moljević 52 - Kontakt</title>
+    <link rel="icon" type="image/x-icon" href="slike/generalno/favicon.png">
+    <style>
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+            list-style: none;
+        }
+        table {
+            width: 800px; 
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black; 
+            padding: 5px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <img src="slike/generalno/logo.png" alt="" height="52px" width="100px">
+        <ul class="navbar">
+            <li>
+                <a href="index.html">
+                    Početna
+                </a>
+            </li>
+            <li>
+                <a href="proizvodi.html">
+                    Proizvodi
+                </a>
+            </li>
+            <li>
+                <a href="knjige.html">
+                    Knjige
+                </a>
+            </li>
+            <li>
+                <a href="kontakt.html">
+                    Kontakt
+                </a>
+            </li>
+            <li>
+                <a href="pomoc.html">
+                    Pomoć
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <h1>Kontakt</h1>
+    <p>
+        <strong>Moljević 52 </strong> <br>
+        Školska 1 <br>
+        21000 Novi Sad <br>
+        Srbija <br> 
+        <hr>
+        <a href="mailto:info@moljevic52.com" >
+            info@moljevic52.com
+        </a>
+    </p>
+    <h2>Kontaktirajte nas!</h2>
+    <form>
+        <label for="ime">
+            Ime
+        </label> <br>
+     <input id="ime" type="text"><br>
+     <label for="prezime">
+        Prezime
+     </label><br>
+     <input id="prezime" type="text"><br>
+     <label for="e-mail">
+        E-mail
+     </label><br>
+     <input id="e-mail" type="email"><br>
+     <label for="ostavitePoruku">
+        Ostavite poruku
+     </label><br>
+     <textarea id="ostavitePoruku" type="text" cols="30" rows="5">  </textarea><br>
+     <button type="submit" >   Pošalji</button> 
+    </form>
+</body>
+</html>
