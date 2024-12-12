@@ -2,45 +2,23 @@
 <html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
-    <title>Knjižara Moljević 52 - Pomoć</title>
+    <title>Knjižara Moljević - Pomoć</title>
     <link rel="icon" type="image/x-icon" href="slike/generalno/favicon.png">
-    <style>
-        .nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .navbar {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            justify-content: space-around;
-            list-style: none;
-        }
-        table {
-            width: 800px; 
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black; 
-            padding: 5px; 
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body >
 
-    <div class="nav">
-        <img src="slike/generalno/logo.png" alt="" height="52px" width="100px">
-        <ul class="navbar">
+    <div class="nav navigacija">
+        <div class="brend animacija">Knjižara Moljević </div>
+        <ul class="navbar animacija">
             <li>
-                <a href="index.html#o-nama">
+                <a href="index.html">
                     Početna
                 </a>
             </li>
             <li>
-                <a href="proizvodi.html">
-                    Proizvodi
+                <a href="pribor.html">
+                    Pribor
                 </a>
             </li>
             <li>
@@ -54,15 +32,15 @@
                 </a>
             </li>
             <li>
-                <a href="pomoc.html">
+                <a class="active" href="pomoc.html">
                     Pomoć
                 </a>
             </li>
         </ul>
     </div>
 
-
-    <h1>Pomoć</h1>
+    <div class="omotac">
+    <h1 class="glavni-naslov-stranice">Pomoć</h1>
     <hr>
 
 
@@ -90,7 +68,7 @@
     <h3><em>2. Rok za slanje knjiga?</em></h3>
     <p>
         Srbija: rok za dostavu knjiga je 2-7 radnih dana od prijema uplate. Knjige šaljemo kao preporučenu tiskovinu/paket koje dostavlja (ili ubacuje obaveštenje u sanduče) poštar JP Pošta Srbije.
-Inostranstvo: rok za dostavu je 7-10 dana od prijema uplate. Knjige se šalju kurirskom službom DHL.
+Inostranstvo: rok za dostavu je 7-10 dana od prijema uplate. Knjige se šalju kurirskom službom DHL. <hr>
 
     </p>
     <a name="troskovi"></a>
@@ -107,5 +85,6 @@ Za porudžbine u vrednosti preko 2000 dinara isporuka na teritoriji Srbije je be
         <p>
             Zamjenu je moguće izvršiti u našoj radnji.
         </p>
+    </div>
 </body>
 </html>

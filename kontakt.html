@@ -2,45 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Knjižara Moljević 52 - Kontakt</title>
+    <title>Knjižara Moljević - Kontakt</title>
     <link rel="icon" type="image/x-icon" href="slike/generalno/favicon.png">
-    <style>
-        .nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .navbar {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            justify-content: space-around;
-            list-style: none;
-        }
-        table {
-            width: 800px; 
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black; 
-            padding: 5px; 
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="nav">
-        <img src="slike/generalno/logo.png" alt="" height="52px" width="100px">
-        <ul class="navbar">
+    <div class="nav navigacija">
+        <div class="brend animacija">Knjižara Moljević </div>
+        <ul class="navbar animacija">
             <li>
-                <a href="index.html#o-nama">
+                <a href="index.html">
                     Početna
                 </a>
             </li>
             <li>
-                <a href="proizvodi.html">
-                    Proizvodi
+                <a href="pribor.html">
+                    Pribor
                 </a>
             </li>
             <li>
@@ -49,7 +27,7 @@
                 </a>
             </li>
             <li>
-                <a href="kontakt.html">
+                <a class="active" href="kontakt.html">
                     Kontakt
                 </a>
             </li>
@@ -59,13 +37,12 @@
                 </a>
             </li>
         </ul>
-
     </div>
 
-
-    <h1>Kontakt</h1>
+    <div class="omotac">
+    <h1 class="glavni-naslov-stranice">Kontakt</h1>
     <p>
-        <strong>Moljević 52 </strong> <br>
+        <strong>Moljević</strong> <br>
         Školska 1 <br>
         21000 Novi Sad <br>
         Srbija <br> 
@@ -74,25 +51,22 @@
             info@moljevic52.com
         </a>
     </p>
-    <h2>Kontaktirajte nas!</h2>
-    <form>
-        <label for="ime">
-            Ime
-        </label> <br>
-     <input id="ime" type="text"><br>
-     <label for="prezime">
-        Prezime
-     </label><br>
-     <input id="prezime" type="text"><br>
-     <label for="e-mail">
-        E-mail
-     </label><br>
-     <input id="e-mail" type="email"><br>
-     <label for="ostavitePoruku">
-        Ostavite poruku
-     </label><br>
-     <textarea id="ostavitePoruku" type="text" cols="30" rows="5">  </textarea><br>
-     <button type="submit" >   Pošalji</button> 
-    </form>
+    <div class="kontakt">
+        <div class="omotac-forme">
+            <h2>Kontaktirajte nas!</h2>
+            <form>
+               
+             <input id="ime" type="text" placeholder="Ime"><br><br>
+             <input id="prezime" type="text" placeholder="Prezime"><br><br>
+             <input id="e-mail" type="email" placeholder="E-mail"><br><br>
+             <textarea id="ostavitePoruku" type="text" cols="30" rows="5" placeholder="Ostavite poruku">  </textarea><br><br>
+             <button type="submit" >Pošalji</button> 
+            </form>
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.8977086837413!2d19.83277043429804!3d45.249861219441044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b104063400001%3A0xf5d35eb0532977c3!2s%C5%A0kolska%201%2C%20Novi%20Sad%2021000!5e0!3m2!1shr!2srs!4v1732376871597!5m2!1shr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </div>
 </body>
 </html>

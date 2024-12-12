@@ -4,47 +4,25 @@
     <meta charset="UTF-8">
     <title>Knjižara Moljević 52 - Knjige</title>
     <link rel="icon" type="image/x-icon" href="slike/generalno/favicon.png">
-    <style>
-        .nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .navbar, .knjige {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            justify-content: space-around;
-            list-style: none;
-        }
-        table {
-            width: 800px; 
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black; 
-            padding: 5px; 
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="nav">
-        <img src="slike/generalno/logo.png" alt="" height="52px" width="100px">
-        <ul class="navbar">
+    <div class="nav navigacija">
+        <div class="brend animacija">Knjižara Moljević </div>
+        <ul class="navbar animacija">
             <li>
-                <a href="index.html#o-nama">
+                <a href="index.html">
                     Početna
                 </a>
             </li>
             <li>
-                <a href="proizvodi.html">
-                    Proizvodi
+                <a href="pribor.html">
+                    Pribor
                 </a>
             </li>
             <li>
-                <a href="knjige.html">
+                <a class="active" href="knjige.html">
                     Knjige
                 </a>
             </li>
@@ -61,39 +39,128 @@
         </ul>
     </div>
 
+    <div class="omotac">
 
-    <h1>Knjige</h1>
-    <h2>Od knjiga izdvajamo, neke od najčitanijih:</h2>
+        <h1 class="glavni-naslov-stranice">Knjige</h1>
+        <h3>Od knjiga izdvajamo, neke od najčitanijih:</h3>
 
-    <div class="knjige">
-        <div style="width: 300px">
-            <h3>Spajdermen</h3>
-            <img src="slike/knjige/Spajdermen.gif" alt="" width="300">
-            <blockquote><strong><em>700 RSD</em></strong></blockquote>
-            <p><strong>Superheroji nestaju! Svi, sem jednog!</strong></p>
-            <p>Obično je jutro za Spajdermena, radio je ono što svaki njegov uobičajeni herojski dan nosi sa sobom: izvodio je akrobacije, čuvao ljubimce, pronalazio izgubljene stvari starijim gospođama. Odjednom, prekida ga Fantastična četvorka u društvu s Namorom. Donose mu uznemirujuće vesti: veliki podvodni grad Atlantida je nestao, a herojima treba Spajdijeva pomoć da ga pronađu. Misija je nesigurna, ali Spajdermen ne želi da razočara drugare heroje. Međutim, ne samo da je nestala Atlantida, sad u čitavom gradu počinju da nestaju i drugi superheroji. Znači, biće mu            </p>
-        </div>
-        <div style="width: 300px">
-            <h3>Sagorela</h3>
-            <img src="slike/knjige/Sagorela.gif" alt="" width="300">
-            <blockquote><strong><em>450 RSD</em></strong></blockquote>
-            <p>Autorka bestselera Volim svoj život, Sećaš me se? i serijala Kupoboličarka</p>
-            <p> „Duhovita i vesela knjiga koja slavi život. Poželela sam da se nikad ne završi.“
-                – Dženi Kolgan</p>
-                <p>Ona može da uradi bilo šta, samo ne sve.</p>
-                <P>Saša je stvarno i konačno završila sa svim: sa poslom (iscrpljujućim), sa prijateljstvima (gurnutim u stranu), sa seksualnim životom (ionako nepostojećim). Saša je udarila glavom o zid (bukvalno).Rešena da pije smutije od kelja, da isproba jogu i samoću, ona kreće u letovalište u Devonu koje je zavolela još kao dete. </P>
-        </div>
-        <div style="width: 300px">
-            <h3>Mesec bez meda</h3>
-            <img src="slike/knjige/Mesec-bez-meda-91038.gif" alt="" width="300">
-            <blockquote><strong><em>1250 RSD</em></strong></blockquote>
-            <p>
-                Oliv nikada nema sreće, ali je zato njena identična sestra bliznakinja Ejmi, s druge strane, verovatno najsrećnija osoba na svetu. Dok se sprema da se uda za muškarca iz snova, Oliv je primorana da se lepo ponaša prema svom neprijatelju: kumu Itanu.
-            </p>
-            <p>
-                Ipak, možda je došao red na Oliv da bude srećne ruke… Kada se svi gosti na venčanju – osim Oliv i Itana – otruju hranom, njih dvoje čeka plaćeni medeni mesec iz snova na Havajima. Ostavljajući međusobnu mržnju po strani, Oliv i Itan kreću u raj. Međutim, kada Oliv naleti na svog buducćeg šefa, mala bela laž koju mu je izgovorila izmiče kontroli.
-            </p>
-        </div>
+        <div class="knjige">
+            <div class="knjiga">
+                <h3>Zona Zamfirova</h3>
+                <p>Stevan Sremac</p>
+                <div class="linija"></div>
+                <img src="slike/knjige/sremac.png" alt="" >
+                <div class="linija"></div>
+                <blockquote><strong><em>700 RSD</em></strong></blockquote>
+                <p>Ljubavna priča uz koju sazrevaju generacije.<br> <br> Zona Zamfirova je knjiga uz koju odrastaju generacije. Koja je tajna njene popularnosti? Zašto se i sto godina posle prvog izdanja priređuju pozorišne predstave, televizijske serije, igrani filmovi i mjuzikli i zašto su po pravilu hitovi svog vremena? Kako iz jedne konvencionalne fabule o dvoje mladih, razdvojenih staleškim razlikama, koji posle mnogobrojnih ljubavnih trzavica nalaze mir u bračnoj luci, nastalo je opšteprihvaćeno, nacionalno delo? Zato što delo ne čini tema nego način na koji je interpretirana.A priča o Zoni, bogatoj mezimici ćerki.</p>
+            </div>
+            <div class="knjiga">
+                <h3>Derviš i smrt</h3>
+                <p>Meša Selimović</p>
+                <div class="linija"></div>
+                <img src="slike/knjige/Mesa.jpg" alt="" >
+                <div class="linija"></div>
+                <blockquote><strong><em>450 RSD</em></strong></blockquote>
+                <p>Derviš i smrt obrađena lektira Meše Selimovića. Lektira sadrži detaljan kratak sadržaj, analizu djela, književne elemente, analizu likova i bilješku o piscu, sve potrebno za kvalitetnu obradu i aktivno sudjelovanje u nastavi.Derviš i smrt po vrsti je psihološki i filozofski roman, pun introspekcija glavnog lika, kojima on traži smisao života. Roman se sastoji od šesnaest poglavlja, a podijeljen je na dva dijela – prvi dio romana sastoji se od devet poglavlja, a drugi od preostalih sedam poglavlja. Svako poglavlje započinje ajetom – ulomkom iz Kurana, koji najavljuje temu poglavlja, a zadnje poglavlje započinje istim ajetom kao i prvo poglavlje, čime se ostvaruje ciklička struktura romana, gdje je završetak ujedno i početak.</p>
+            </div>
+            <div class="knjiga">
+                <h3>Znakovi pored puta</h3>
+                <p>Ivo Andrić</p>
+                <div class="linija"></div>
+                <img src="slike/knjige/znakovi.jpg" alt="" >
+                <div class="linija"></div>
+                <blockquote><strong><em>1250 RSD</em></strong></blockquote>
+                <p>
+                    Neiscrpno vrelo mudrosti, „Znakovi pored puta“ već skoro pola veka omiljeno su štivo mnogih generacija, knjiga koja se sa podjednakim uživanjem može čitati gde god se otvori, riznica najraznolikijih saveta, zapažanja i životnih uvida koje je ovaj pisac upućivao ne samo čitaocima nego i samome sebi.<br>Posebna vrednost ovog Laguninog izdanja su prevodi pojedinih izreka i citata stranih pisaca koje je Andrić u originalu na nemačkom, latinskom, francuskom i dr. jezicima unosio u svoju fasciklu, a koje u dosadašnjim izdanjima ovog osobenog dela nisu prevedeni.<br>Ovo luksuzno izdanje štampano je u tvrdom povezu, sa koricama od kože.
+                </p>
+            </div>
+            <div class="knjiga">
+                <h3>Na Drini ćuprija</h3>
+                <p>Ivo Andrić</p>
+                <div class="linija"></div>
+                <img src="slike/knjige/andric.jpg" alt="" >
+                <div class="linija"></div>
+                <blockquote><strong><em>1550 RSD</em></strong></blockquote>
+                <p>Najpoznatiji roman Ive Andrića, Na Drini ćurpija (1945), hronološki prati četiri veka zbivanja oko velikog mosta preko reke Drine u Višegradu, koji je izgradio veliki vezir Mehmed paša Sokolović, poreklom iz tih krajeva. <br>
+                    Godine 1516. Mehmed paša je, prema vladajućem običaju uzimanja danka u krvi, kao srpski dečak na silu odveden u tursku vojsku i poturčen da bi se kasnije uzdigao lestvicama vlasti i postao prvi do sultana. Kao moćnik, odlučio je da u rodnom kraju podigne zadužbinu, veliki kameni most na jedanaest lukova.
+                </p>
+            </div>
+            <div class="knjiga">
+                <h3>Izabrane pesme</h3>
+                <p>Desanka Maksimović</p>
+                <div class="linija"></div>
+                <img src="slike/knjige/desanka.jpg" alt="" >
+                <div class="linija"></div>
+                <blockquote><strong><em>1550 RSD</em></strong></blockquote>
+                <p>Književni časopis „Misao” 1920. godine širom je otvorio vrata pesmama mlade Desanke Maksimović, koje su nesvakidašnje neposredno i razumljivo progovarale o prirodi, ljubavi, neizgovorenim čežnjama. Danas, u kontekstu srpske književnosti XX veka, pesničko delo Desanke Maksimović zauzima neprikosnoveno mesto.Desanka Maksimović bila je i pesnikinja rodoljubivog osećanja, filozofskih refleksija, istrajne misaonosti i etosa slobode, dobrote, hrabrosti i odanosti.</p>
+            </div>
+            <div class="knjiga">
+                <h3>Orlovi rano lete</h3>
+                <p>Branko Ćopić</p>
+                <div class="linija"></div>
+                <img src="slike/knjige/copic.jpg" alt="" >
+                <div class="linija"></div>
+                <blockquote><strong><em>1550 RSD</em></strong></blockquote>
+                <p>U bosanskom selu Lipovu odrasta grupa četvrtaka. Kada njihovu dobrodušnu učiteljicu Lanu zameni džangrizavi učitelj Paprika, koji veruje da je batina najbolje sredstvo za vaspitavanje đaka, dečaci, ali i jedna neustrašiva devojčica, odlučuju da se odmetnu i pobegnu u šumu. Tamo ubrzo niče logor Tepsija, u kojem će deca provesti mnoge bezbrižne dane, pune avantura. Međutim, počinje Drugi svetski rat i deca prevremeno odrastaju, shvatajući da se njihova borba protiv nepravde i nasilja nastavlja, ali ovog puta na novom i mnogo ozbiljnijem planu.</p>
+            </div>
+        </div>    
+        <h3>Od stranih knjiga izdvajamo:</h3>
+        <div class="knjige">
+            <div class="knjiga">
+                <h3>The women</h3>
+                <p>Kristin Hannah</p>
+                <div class="linija"></div>
+                <img src="slike/knjige/kristin.jpg" alt="" >
+                <div class="linija"></div>
+                <blockquote><strong><em>1550 RSD</em></strong></blockquote>
+                <p>' Žene mogu biti heroji '. Kada dvadesetogodišnja studentkinja medicinskih sestara, Frances "Frankie" McGrath, čuje ove neočekivane reči, to je otkriće. Odrasla na idiličnom kalifornijskom ostrvu Coronado i zaštićena od strane svojih konzervativnih roditelja, uvek se ponosila time što je učinila pravu stvar, što je dobra devojka. Ali 1965. godine svet se menja, a ona odjednom zamišlja drugačiji put za svoj život. Kada njen brat ode da služi u Vijetnamu, ona se impulsivno pridružuje vojnim medicinskim sestrama i prati njegov put.</p>
+            </div>
+            <div class="knjiga">
+                <h3>First lie wins</h3>
+                <p>Aeshley Elston</p>
+                <div class="linija"></div>
+                <img src="slike/knjige/ashley.jpg" alt="" >
+                <div class="linija"></div>
+                <blockquote><strong><em>860 RSD</em></strong></blockquote>
+                <p>Sve što će im reći je laž ... Evie Porter ima sve što devojka može da poželi: dragog dečka, kuću sa ogradom, zabavnu grupu prijatelja. Jedina caka: Evie Porter ne postoji. Prvo dolazi identitet. Jednom kada joj poslodavac da ime i lokaciju, ona sazna sve što treba znati o gradu i ljudima u njemu. Zatim znak: Rajan Sumner. Poslednji deo slagalice je posao. Za Evie, ovaj posao se oseća drugačije. Rajan joj se uvukao pod kožu i počela je da zamišlja drugu vrstu života za sebe - onaj u kojem njen šef ne vuče konce.</p>
+            </div>
+            <div class="knjiga">
+                <h3>Serbian Folktales</h3>
+                <p>J.K. Jackson</p>
+                <div class="linija"></div>
+                <img src="slike/knjige/jackson.jpg" alt="" >
+                <div class="linija"></div>
+                <blockquote><strong><em>860 RSD</em></strong></blockquote>
+                <p>Priče o srpskom narodu su poetske i oštre, odražavaju njegovo ponosno nasleđe kao južnih Slovena, koji su u godinama nakon pada Zapadnog rimskog carstva zahvatili jug, zauzevši zemlje nekada velikih starih Grka, Latina i Tračana. Njihove narodne priče odjekuju prelepim pejzažom i mešanjem sa klasičnim,  herojska kultura Vizantijaca. Sa novim uvodom ova moćna zbirka okuplja priče kao što su "Onaj ko malo pita dobija mnogo", "Devojka mudrija od cara", "Grizač", "Dobra dela nikada ne propadaju" i "Ovan sa zlatnim runom".</p>
+            </div>
+            <div class="knjiga">
+                <h3>Oddly Normal</h3>
+                <p>Otis Frampton</p>
+                <div class="linija"></div>
+                <img src="slike/knjige/frampton.jpg" alt="" >
+                <div class="linija"></div>
+                <blockquote><strong><em>1855 RSD</em></strong></blockquote>
+                <p>"Tekst sadrži neke sofisticirane vokabulare i književne reference (postoji vampir po imenu Bram, na primer), dok ostaje dostupan. Fignation je bogato zamišljen svet fantastičnih stvorenja. Crteži su zanimljivi i dobro iskoriste ćudljive, zasićene boje. Rekreacija kolekcije Čudno normalne objavljene 2006. godine koja se proširuje na originalnu priču i ponovo je zamišljala presudu ilustracija: Ovo je Framptonova potpuno realizovana vizija za Čudno normalno; vredi dodati u bilo koju kolekciju, čak i one koje već sadrže ranije izdanje."</p>
+            </div>
+            <div class="knjiga">
+                <h3>Rick and Morty</h3>
+                <p>Pamela Ribon</p>
+                <div class="linija"></div>
+                <img src="slike/knjige/ribon.jpg" alt="" >
+                <div class="linija"></div>
+                <blockquote><strong><em>2200 RSD</em></strong></blockquote>
+                <p>Hit serija stripova zasnovana na urnebesnoj ™ animiranoj emisiji Rick and Morti™ Dana Harmona i Justina Roilanda nastavlja se u potpuno novim pričama koje se ne vide na TV-u! Nadoknadite avanture degenerisanog genijalnog naučnika Ricka Sancheza dok vuče svog inherentno plašljivog unuka Mortija Smitha na opasne avanture širom univerzuma! Ova knjiga sadrži pisce nominovane za Ajznera Kajla Starksa (Sekcastle) i Magdalene Visaggio (Kim & Kim) u saradnji sa umetnicima serije CJ Cannon i Marc Ellerby, plus gostujući pisci Tini Hovard.</p>
+            </div>
+            <div class="knjiga">
+                <h3>Attack On Titan: Before The Fall</h3>
+                <p>Satoshi Shiki </p>
+                <div class="linija"></div>
+                <img src="slike/knjige/shiki.jpg" alt="" >
+                <div class="linija"></div>
+                <blockquote><strong><em>1650 RSD</em></strong></blockquote>
+                <p>Čovečanstvo je naučilo da živi u samozadovoljstvu iza svojih visokih zidova, zaštićeno od džinovskih Titana. Ali kada kult obožavanja Titana otvori jednu od kapija, Titan pravi pustoš, proždirući kultiste. Nakon što se divljanje završi, dva mlada člana Istraživačkog korpusa šokirana su kada otkriju delimično probavljeni leš trudne žene - sa bebom koja je još uvek živa u njemu! Kakva će biti sudbina ovog "deteta Titana"? I kako će čovečanstvo naučiti da se nosi sa pretnjom Titana?</p>
+            </div>
+        </div>   
     </div>
 </body>
 </html>
